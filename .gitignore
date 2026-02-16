@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.log
+.vercel
+web/node_modules/
+web/dist/
+web/.vercel/
+nul
+.claude/

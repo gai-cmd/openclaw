@@ -1,0 +1,65 @@
+{
+  "lastUpdated": "2026-02-12",
+  "projects": [
+    {
+      "id": "kanban-chart",
+      "name": "칸반차트 프로젝트",
+      "description": "내부 프로젝트 관리 시스템 (칸반 보드, 팀원 일정, API/토큰 사용량 추적)",
+      "status": "개발 중",
+      "lead": "cs",
+      "team": ["cs", "dev", "design"],
+      "files": [
+        "workspace/cs/칸반차트_프로젝트_요구사항_정의서.md",
+        "workspace/dev/kanban-chart/database",
+        "workspace/dev/kanban-chart/api",
+        "workspace/dev/kanban-chart/api/tasks.js"
+      ],
+      "createdAt": "2026-02-10",
+      "deadline": ""
+    },
+    {
+      "id": "fx-trader",
+      "name": "FX Trader 프로젝트",
+      "description": "외환 트레이딩 관련 프로젝트",
+      "status": "미착수",
+      "lead": "dev",
+      "team": ["dev"],
+      "files": [],
+      "createdAt": "2026-02-10",
+      "deadline": ""
+    },
+    {
+      "id": "linkedin-outreach",
+      "name": "LinkedIn 아웃리치 도구",
+      "description": "LinkedIn API 연계 아웃리치 및 유료 계정 사용 마케팅 도구",
+      "status": "미착수",
+      "lead": "marketing",
+      "team": ["marketing", "dev"],
+      "files": [],
+      "createdAt": "2026-02-10",
+      "deadline": ""
+    },
+    {
+      "id": "trylot",
+      "name": "Trylot 프로젝트",
+      "description": "Trylot 관련 프로젝트",
+      "status": "미착수",
+      "lead": "dev",
+      "team": ["dev"],
+      "files": [],
+      "createdAt": "2026-02-10",
+      "deadline": ""
+    },
+    {
+      "id": "crm",
+      "name": "CRM 프로젝트",
+      "description": "고객 관계 관리 시스템",
+      "status": "미착수",
+      "lead": "cs",
+      "team": ["cs", "dev"],
+      "files": [],
+      "createdAt": "2026-02-10",
+      "deadline": ""
+    }
+  ]
+}

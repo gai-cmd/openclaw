@@ -1,0 +1,10 @@
+node_modules
+web/node_modules
+web/src
+web/*.ts
+web/*.json
+web/index.html
+.env
+.git
+workspace
+*.md

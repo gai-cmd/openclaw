@@ -1,0 +1,87 @@
+### Task CRUD API Design using Hono
+
+**Base URL:** /api/tasks
+
+#### 1. Create Task
+- **Endpoint:** POST /api/tasks
+- **Description:** Create a new task.
+- **Request Body:**
+  ```json
+  {
+    "project_id": "number",
+    "name": "string",
+    "description": "string",
+    "assigned_to": "string",
+    "due_date": "string (YYYY-MM-DD)",
+    "status": "string"
+  }
+  ```
+- **Response:**
+  - **201 Created**
+  - **Body:**
+    ```json
+    {
+      "id": "number",
+      "project_id": "number",
+      "name": "string",
+      "description": "string",
+      "assigned_to": "string",
+      "due_date": "string (YYYY-MM-DD)",
+      "status": "string"
+    }
+    ```
+
+#### 2. Read Task
+- **Endpoint:** GET /api/tasks/:taskId
+- **Description:** Retrieve task details by ID.
+- **Response:**
+  - **200 OK**
+  - **Body:**
+    ```json
+    {
+      "id": "number",
+      "project_id": "number",
+      "name": "string",
+      "description": "string",
+      "assigned_to": "string",
+      "due_date": "string (YYYY-MM-DD)",
+      "status": "string"
+    }
+    ```
+
+#### 3. Update Task
+- **Endpoint:** PUT /api/tasks/:taskId
+- **Description:** Update an existing task.
+- **Request Body:**
+  ```json
+  {
+    "project_id": "number",
+    "name": "string",
+    "description": "string",
+    "assigned_to": "string",
+    "due_date": "string (YYYY-MM-DD)",
+    "status": "string"
+  }
+  ```
+- **Response:**
+  - **200 OK**
+  - **Body:**
+    ```json
+    {
+      "id": "number",
+      "project_id": "number",
+      "name": "string",
+      "description": "string",
+      "assigned_to": "string",
+      "due_date": "string (YYYY-MM-DD)",
+      "status": "string"
+    }
+    ```
+
+#### 4. Delete Task
+- **Endpoint:** DELETE /api/tasks/:taskId
+- **Description:** Delete a task by ID.
+- **Response:**
+  - **204 No Content**
+
+This document outlines the structure and requirements for the RESTful API endpoints to manage tasks in the Kanban chart application. Ensure validation and error handling are included during implementation.

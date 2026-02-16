@@ -1,0 +1,36 @@
+# Kanban Chart Design
+
+## UI/UX Improvements
+
+### 1. Color Scheme
+- **Primary Color**: #6200EE
+- **Background Color**: #F5F5F5
+
+### 2. Typography
+- **Font Family**: 'Roboto', sans-serif
+- **Header**: 24px Bold
+- **Body**: 16px Regular
+
+### 3. Buttons
+- **Add Card Button**: Height 48px, Padding 0 16px, Rounded 4px
+- **Active Color**: #6200EE for background, #FFFFFF for text
+
+## UX Enhancements
+- **Drag and Drop Transition**: Smooth transition of 0.3 seconds
+- **Emphasis on Key Information**: Bold text for primary information, caption style for supplementary information
+
+## Accessibility Considerations
+- **Contrast Ratio**: Minimum of 4.5:1
+- **Font Size**: Minimum 12px for readability
+
+## Layout and Design Elements
+- **Grid System**: 12 Column Grid for consistent layout
+- **Padding and Margin**: Standard 16px
+
+## Chart Composition
+- **Card Elements**: Each task card includes title, description, and assigned user details
+- **Column States**: Clearly divided into To Do, In Progress, and Done for easy tracking
+
+## Conclusion
+
+This Sketch file provides the foundational design for improving the UI/UX of the Kanban Chart. It draws references from the existing Trylot design system and aims for continuous feedback and iterations for enhancements.

@@ -1,0 +1,49 @@
+# UI Components Guide for Kanban Chart
+
+## 1. Color Palette
+- **Primary Color**: #6200EE
+- **Secondary Color**: #03DAC5
+- **Background Color**: #F5F5F5
+- **Surface Color**: #FFFFFF
+- **Error Color**: #B00020
+
+## 2. Typography
+- **Font Family**: 'Roboto', sans-serif
+- **Heading**: 24px, 20px Bold
+- **Body**: 16px Regular
+- **Caption**: 12px Regular
+
+## 3. Button Styles
+- **Default Button**: Height 48px, Padding 0 16px, Round 4px
+- **Active Button**: Background #6200EE, Text #FFFFFF
+- **Disabled Button**: Background #E0E0E0, Text #9E9E9E
+
+## 4. Iconography
+- **Size**: 24px
+- **Formats**: SVG, PNG
+
+## 5. Input Fields
+- **Default Height**: 40px
+- **Border Color**: #BDBDBD
+- **Focus Border Color**: #6200EE
+
+## 6. Layout Grid
+- **12 Column Grid**
+- **Gutters**: 16px
+- **Margin**: 24px
+
+## 7. Spacing and Alignment
+- **Default Margin**: 16px
+- **Default Padding**: 16px
+
+## 8. Accessibility
+- **Contrast Ratio**: Minimum 4.5:1
+- **Font Size**: Minimum 12px
+
+## 9. Additional Design Elements
+- **Shadow**: 0 2px 4px rgba(0,0,0,0.1)
+- **Transitions**: 0.3s ease-in-out
+
+---
+
+This UI Components Guide is designed to ensure a consistent user experience and an efficient collaboration between developers and designers for the Kanban chart project. Each component is subject to iteration and improvement based on feedback.

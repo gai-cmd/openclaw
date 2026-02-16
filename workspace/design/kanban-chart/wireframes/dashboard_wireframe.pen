@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "children": [
+    {
+      "id": "frame-1",
+      "type": "frame",
+      "name": "Dashboard",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "fill": "#F5F5F5",
+      "layout": "column",
+      "gap": 16,
+      "padding": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "children": [
+        {
+          "id": "pv1",
+          "type": "rectangle",
+          "name": "ProjectOverview",
+          "x": 0,
+          "y": 0,
+          "width": 1400,
+          "height": 150,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": "#E0E0E0"
+        },
+        {
+          "id": "tw1",
+          "type": "rectangle",
+          "name": "TeamWorkload",
+          "x": 0,
+          "y": 170,
+          "width": 680,
+          "height": 300,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": "#E0E0E0"
+        },
+        {
+          "id": "rat1",
+          "type": "rectangle",
+          "name": "RecentActivityTimeline",
+          "x": 0,
+          "y": 490,
+          "width": 1400,
+          "height": 200,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": "#E0E0E0"
+        },
+        {
+          "id": "api1",
+          "type": "rectangle",
+          "name": "APIUsageSummary",
+          "x": 700,
+          "y": 170,
+          "width": 700,
+          "height": 300,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": "#E0E0E0"
+        }
+      ]
+    }
+  ]
+}

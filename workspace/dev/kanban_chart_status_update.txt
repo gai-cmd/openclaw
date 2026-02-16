@@ -1,0 +1,7 @@
+[REPORT]
+Team: Dev
+Task: 칸반차트 기능에 대한 코드 작성
+Status: Complete
+Files: D:\projects\miraclro\multi-agent-bot\workspace\dev\KanbanChart.ts
+Details: 칸반차트의 기능을 구현하기 위한 TypeScript 기반 파일 'KanbanChart.ts'를 생성하고, 칸반 보드의 기본 구조와 Task 관리 메소드를 정의하였습니다. 이 파일은 필요한 칼럼 구조와 Task 이동 및 추가를 수행할 수 있도록 설계되었습니다.
+Next Action: 추가적인 피드백을 수렴하여 기능을 개선하고, API와의 연동 작업 예정.
