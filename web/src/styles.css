@@ -1066,6 +1066,122 @@ body {
   color: var(--accent);
 }
 
+/* Project Overview - Meta Row */
+.overview-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.overview-status {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  background: rgba(88, 166, 255, 0.1);
+  border-radius: 12px;
+}
+
+.overview-lead {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.overview-date {
+  font-size: 12px;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.overview-team-chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.team-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  font-size: 12px;
+  color: var(--text);
+}
+
+/* Project Details Grid (Features + Deliverables) */
+.overview-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.overview-detail-col h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.overview-detail-col h4 {
+  font-size: 13px;
+  margin: 16px 0 8px;
+  color: var(--text-muted);
+}
+
+.overview-feature-list,
+.overview-deliverable-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overview-feature-list li {
+  font-size: 13px;
+  color: var(--text);
+  padding: 6px 0 6px 16px;
+  border-left: 2px solid var(--accent);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.overview-deliverable-list li {
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+.overview-deliverable-list li.done {
+  color: var(--green);
+}
+
+.overview-deliverable-list li.pending {
+  color: var(--text-muted);
+}
+
+/* Tech Tags */
+.overview-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  background: rgba(88, 166, 255, 0.08);
+  color: var(--accent);
+  border-radius: 4px;
+  border: 1px solid rgba(88, 166, 255, 0.15);
+}
+
 /* ============================================================
    Responsive
    ============================================================ */
@@ -1075,6 +1191,7 @@ body {
   .dash-grid { grid-template-columns: 1fr; }
   .team-spokes { grid-template-columns: repeat(2, 1fr); }
   .detail-meta-grid { grid-template-columns: 1fr 1fr; }
+  .overview-details-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -1086,4 +1203,5 @@ body {
   .form-row { grid-template-columns: 1fr 1fr; }
   .detail-meta-grid { grid-template-columns: 1fr; }
   .overview-stats { flex-wrap: wrap; }
+  .overview-details-grid { grid-template-columns: 1fr; }
 }
