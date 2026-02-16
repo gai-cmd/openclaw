@@ -7,9 +7,30 @@ type Tab = 'overview' | 'board' | 'dashboard';
 
 const PROJECTS = ['KAN', 'FXT', 'LIO', 'TRL', 'CRM'];
 
+function getInitialTheme(): 'dark' | 'light' {
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') return saved;
+  } catch {}
+  return 'dark';
+}
+
 export function App() {
   const [tab, setTab] = useState<Tab>('board');
   const [project, setProject] = useState('KAN');
+  const [theme, setTheme] = useState<'dark' | 'light'>(getInitialTheme);
+
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  };
+
+  // 초기 렌더 시 테마 적용
+  React.useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, []);
 
   return (
     <div className="app">
@@ -43,6 +64,9 @@ export function App() {
               <option key={p} value={p}>{p}</option>
             ))}
           </select>
+          <button className="theme-toggle" onClick={toggleTheme} title={theme === 'dark' ? '라이트 모드' : '다크 모드'}>
+            {theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19'}
+          </button>
         </nav>
       </header>
       <main className="main">
